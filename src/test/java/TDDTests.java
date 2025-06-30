@@ -1,3 +1,4 @@
+import org.example.Fibonacci;
 import org.example.PlayerCharacter;
 import org.junit.Test;
 
@@ -65,5 +66,22 @@ public class TDDTests {
         playerCharacter.move("a");
         assert(-2 == playerCharacter.getPositionX());
         assert(0 == playerCharacter.getPositionY());
+    }
+
+    @Test
+    public void testFibonacci(){
+        assert(Fibonacci.getFibonacci(-30) == 0);
+        assert(Fibonacci.getFibonacci(0) == 0);
+        assert(Fibonacci.getFibonacci(1) == 1);
+        assert(Fibonacci.getFibonacci(9) == 34);
+    }
+
+    @Test
+    public void testFibonacciCustomStart(){
+        assert(Fibonacci.getFibonacciCustomStart(-30, 1.5) == 1.5);
+        assert(Fibonacci.getFibonacciCustomStart(0, -3.6) == -3.6);
+        assert(Fibonacci.getFibonacciCustomStart(1, 18) == 36);
+        assert(Fibonacci.getFibonacciCustomStart(5, -2) == -26);
+        assert(Fibonacci.getFibonacciCustomStart(9, 0.7) == 62.3);
     }
 }

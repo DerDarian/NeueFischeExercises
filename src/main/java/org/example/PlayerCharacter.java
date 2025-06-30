@@ -21,4 +21,5 @@ public class PlayerCharacter {
             case "D": ++positionX; break;
         }
     }
+
 }
