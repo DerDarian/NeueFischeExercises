@@ -13,6 +13,11 @@ public class PlayerCharacter {
     }
 
     public void move(String direction) {
-        ++positionY;
+        switch (direction) {
+            case "W": ++positionY; break;
+            case "S": --positionY; break;
+            case "A": --positionX; break;
+            case "D": ++positionX; break;
+        }
     }
 }
