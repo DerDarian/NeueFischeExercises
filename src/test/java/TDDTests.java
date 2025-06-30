@@ -25,6 +25,10 @@ public class TDDTests {
         playerCharacter.move("W");
         assert(0 == playerCharacter.getPositionX());
         assert(1 == playerCharacter.getPositionY());
+
+        playerCharacter.move("w");
+        assert(0 == playerCharacter.getPositionX());
+        assert(2 == playerCharacter.getPositionY());
     }
 
     @Test
@@ -33,6 +37,10 @@ public class TDDTests {
         playerCharacter.move("S");
         assert(0 == playerCharacter.getPositionX());
         assert(-1 == playerCharacter.getPositionY());
+
+        playerCharacter.move("s");
+        assert(0 == playerCharacter.getPositionX());
+        assert(-2 == playerCharacter.getPositionY());
     }
 
     @Test
@@ -41,6 +49,10 @@ public class TDDTests {
         playerCharacter.move("D");
         assert(1 == playerCharacter.getPositionX());
         assert(0 == playerCharacter.getPositionY());
+
+        playerCharacter.move("d");
+        assert(2 == playerCharacter.getPositionX());
+        assert(0 == playerCharacter.getPositionY());
     }
 
     @Test
@@ -48,6 +60,10 @@ public class TDDTests {
         PlayerCharacter playerCharacter = new PlayerCharacter();
         playerCharacter.move("A");
         assert(-1 == playerCharacter.getPositionX());
+        assert(0 == playerCharacter.getPositionY());
+
+        playerCharacter.move("a");
+        assert(-2 == playerCharacter.getPositionX());
         assert(0 == playerCharacter.getPositionY());
     }
 }

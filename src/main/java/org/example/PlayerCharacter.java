@@ -13,6 +13,7 @@ public class PlayerCharacter {
     }
 
     public void move(String direction) {
+        direction = direction.toUpperCase();
         switch (direction) {
             case "W": ++positionY; break;
             case "S": --positionY; break;
