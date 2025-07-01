@@ -52,7 +52,7 @@ public class Main {
 
         Integer[]  numbers = new Integer[i];
         for(int j=0;j<i;j++){
-            numbers[j] = j + 1;
+            numbers[j] = (Integer) (j + 1);
         }
 
         System.out.println(Arrays.toString(numbers));
@@ -63,12 +63,12 @@ public class Main {
 
         Integer[]  numbers2 = new Integer[i];
         for(int j=0; j<i; j++){
-            numbers2[j] = (j + i + 1);
+            numbers2[j] = (Integer) (j + i + 1);
         }
 
         Integer[] numbers3 = new Integer[i];
         for(int j=0; j<i; j++){
-            numbers3[j] = numbers2[j] + numbers[j];
+            numbers3[j] = (Integer) (numbers2[j] + numbers[j]);
         }
 
         System.out.println(Arrays.toString(numbers3));
