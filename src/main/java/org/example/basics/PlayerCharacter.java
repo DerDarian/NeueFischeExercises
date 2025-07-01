@@ -1,4 +1,4 @@
-package org.example;
+package org.example.basics;
 
 public class PlayerCharacter {
     int positionX = 0;

@@ -1,8 +1,10 @@
-import org.example.Fibonacci;
-import org.example.PlayerCharacter;
+package basics;
+
+import org.example.basics.Fibonacci;
+import org.example.basics.PlayerCharacter;
 import org.junit.Test;
 
-public class TDDTests {
+public class BasicsTests {
 
     @Test
     public void testGetXStart(){
