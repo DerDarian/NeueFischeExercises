@@ -15,7 +15,7 @@ public class PasswordValidationTests {
         // No Lower Case
         String noLC = "OHA1WOW9-KRASS3ÖH";
         // No Special Character
-        String noSC = "OHA1WOW9KRASS3ÖH";
+        String noSC = "OHA1WOoW9KRASS3ÖH";
 
         // Common passwords
         String mcPassword = "$HEX[687474703a2f2f616473]";
