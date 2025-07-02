@@ -1,4 +1,4 @@
-package org.example.OOP.einfuehrung;
+package org.example.OOP.einfuehrung.Bonusaufgaben.Vehicle;
 
 public class CarInspectionService {
 
