@@ -1,5 +1,7 @@
 package org.example.OOP.einfuehrung;
 
+import javax.print.attribute.standard.Media;
+
 public class OOPEinfuerungMain {
 
     public static void main(String[] args) {
@@ -15,5 +17,27 @@ public class OOPEinfuerungMain {
         Person p2 = new Person("Mary", "Maria", 38, "Female");
         p1.introduce();
         p2.introduce();
+
+        StatischFinal.incrementTotalCount();
+        StatischFinal sf = new StatischFinal();
+        sf.incrementInstanceCount();
+        System.out.println(sf);
+
+        System.out.println(Calculator.add(1,2,3));
+        System.out.println(Calculator.add(1.5,2.6,3.7));
+        System.out.println(Calculator.sub(10,2,3));
+        System.out.println(Calculator.sub(10.7,2.3,3.9));
+        System.out.println(Calculator.mult(1,2,3));
+        System.out.println(Calculator.mult(1.4,2.3,3.4));
+        System.out.println(Calculator.div(10,2,3));
+        System.out.println(Calculator.div(10.7,2.3,3.9));
+
+        Playlable media = new MusicPlayer();
+        Playlable media2 = new VideoPlayer();
+
+        MediaController mediaController = new MediaController();
+        mediaController.playMedia(media);
+        mediaController.playMedia(media2);
+
     }
 }
