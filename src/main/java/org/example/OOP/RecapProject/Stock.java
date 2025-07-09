@@ -27,4 +27,9 @@ public class Stock {
     public void increaseStockBy(int amount) {
         this.amount += amount;
     }
+
+    @Override
+    public String toString() {
+        return "amount: " + amount;
+    }
 }
