@@ -23,5 +23,7 @@ public class Main {
         car.printVehicleInformation();
         motorcycle.printVehicleInformation();
 
+        System.out.println("Diese Änderung habe ich in diesem Branch gemacht.");
+
     }
 }
